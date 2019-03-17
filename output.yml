@@ -1,0 +1,9 @@
+host:
+  hostname: user-linux
+  ip: 192.168.0.44 192.168.12.175 
+date: 2019-03-17 06:53:32
+user:
+  home_folder: /home/user
+  username: user
+first_name: John
+last_name: Doe

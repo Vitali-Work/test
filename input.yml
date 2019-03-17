@@ -1,0 +1,9 @@
+host:
+  hostname: {{hostname}}
+  ip:  ip 
+date: current_date
+user:
+  home_folder: home_folder
+  username: username
+first_name: first_name
+last_name: last_name
