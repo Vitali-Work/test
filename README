@@ -1,1 +1,1 @@
-
+./script.sh ./input.yml -F Vasya -L Pupkin
