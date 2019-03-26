@@ -22,7 +22,7 @@ while [ -n "$2" ]
 do
    case "$2" in
 	-F)
-		echo "nashel F"
+		
 		  if [ -n "$3" ] && [ "$3" != '-L' ]
 		  then
 		     var_first_name="$3"
@@ -31,12 +31,11 @@ do
 		     var_first_name=(John)
 		     shift
 		  fi		
-		echo "nashel F" $var_first_name
+		echo "F" $var_first_name
 		;;	
    	-L) 
 		var_last_name="$3"
-		echo "nashel L"
-		echo "nashel L" $var_last_name
+		echo "L" $var_last_name
         	shift
 		break;;
 		
