@@ -43,9 +43,9 @@ do
 done	
 
 sed -ri 's/^(\s*)(hostname\s*:\s*\{*hostname\}*\s*$)/\1hostname: '"$HOSTNAME"'/' output.yml
-sed -ri 's/^(\s*)(ip\s*:\s*ip\s*$)/\1ip: '"$(hostname -I)"'/' output.yml
-sed -ri 's/^(\s*)(date\s*:\s*current_date\s*$)/\1date: '"$(date '+%F %T')"'/' output.yml
-sed -ri 's|^(\s*)(home_folder\s*:\s*home_folder\s*$)|\1home_folder: '"$HOME"'|' output.yml
-sed -ri 's|^(\s*)(username\s*:\s*username\s*$)|\1username: '"$USER"'|' output.yml
-sed -ri 's/^(\s*)(first_name\s*:\s*first_name\s*$)/\1first_name: '"$var_first_name"'/' output.yml
-sed -ri 's/^(\s*)(last_name\s*:\s*last_name\s*$)/\1last_name: '"$var_last_name"'/' output.yml
+sed -ri 's/^(\s*)(ip\s*:\s*\{*ip\}*\s*$)/\1ip: '"$(hostname -I)"'/' output.yml
+sed -ri 's/^(\s*)(date\s*:\s*\{*current_date\}*\s*$)/\1date: '"$(date '+%F %T')"'/' output.yml
+sed -ri 's|^(\s*)(home_folder\s*:\s*\{*home_folder\}*\s*$)|\1home_folder: '"$HOME"'|' output.yml
+sed -ri 's|^(\s*)(username\s*:\s*\{*username\}*\s*$)|\1username: '"$USER"'|' output.yml
+sed -ri 's/^(\s*)(first_name\s*:\s*\{*first_name\}*\s*$)/\1first_name: '"$var_first_name"'/' output.yml
+sed -ri 's/^(\s*)(last_name\s*:\s*\{*last_name\}*\s*$)/\1last_name: '"$var_last_name"'/' output.yml
